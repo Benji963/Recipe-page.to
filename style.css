@@ -23,6 +23,7 @@
 main {
   background-color: var(--Eggshell);
   padding: 3rem;
+max-height:100vh;
 }
 
 .wrapper {
