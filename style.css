@@ -1,0 +1,191 @@
+:root {
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --ff-main: "Young Serif", serif;
+  --ff-alt: "Outfit", sans-serif;
+  --fw-light: 400;
+  --fw-mid: 600;
+  --fw-bold: 700;
+  --fs: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: var(--Eggshell);
+  padding: 3rem;
+}
+
+.wrapper {
+  background-color: white;
+  width: 735px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2.5rem;
+  border-radius: 15px;
+}
+
+img {
+  width: 650px;
+  border-radius: 15px;
+}
+
+.name h1 {
+  color: var(--Dark-Charcoal);
+  font-family: var(--ff-main);
+  font-size: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.name p {
+  color: var(--Wenge-Brown);
+  font-family: var(--ff-alt);
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+
+.prep-time {
+  background-color: var(--Rose-White);
+
+  list-style-position: inside;
+  border-radius: 15px;
+}
+
+.prep-time h2 {
+  color: var(--Dark-Raspberry);
+  font-size: 1.2rem;
+  font-family: var(--fw-light);
+  padding-left: 1.5rem;
+  padding-top: 1.2rem;
+}
+
+.bold {
+  font-family: var(--ff-alt);
+  font-weight: var(--fw-bold);
+  color: var(--Wenge-Brown);
+  padding-left: 1rem;
+}
+
+.text-color {
+  color: var(--Wenge-Brown);
+  font-family: var(--ff-alt);
+}
+
+.preparation {
+  color: var(--Dark-Raspberry);
+  padding: 1rem 0 2rem 2rem;
+  line-height: 2;
+}
+
+.ingredients h3 {
+  color: var(--Nutmeg);
+  font-size: 1.8rem;
+  font-family: var(--ff-main);
+  font-weight: var(--fw-light);
+  padding: 1.5rem 0 1rem 0;
+}
+
+.ingredients ul {
+  color: var(--Nutmeg);
+  padding-left: 1.6rem;
+}
+
+.ingredients .text-color {
+  font-family: var(--ff-alt);
+  padding-left: 1rem;
+  line-height: 2;
+}
+
+hr {
+  margin-block: 1.5rem;
+}
+
+.instructions h4 {
+  color: var(--Nutmeg);
+  font-size: 1.8rem;
+  font-family: var(--ff-main);
+  font-weight: var(--fw-light);
+  padding-bottom: 1rem;
+}
+
+.instructions li {
+  line-height: 1.5;
+}
+
+.instructions ol {
+  padding-left: 1.6rem;
+  color: var(--Nutmeg);
+  font-family: var(--ff-alt);
+}
+
+.nutrition h5 {
+  color: var(--Nutmeg);
+  font-size: 1.8rem;
+  font-family: var(--ff-main);
+  font-weight: var(--fw-light);
+  padding-bottom: 1rem;
+}
+
+.nutrition p {
+  color: var(--Wenge-Brown);
+  font-family: var(--ff-alt);
+  padding-bottom: 1.5rem;
+}
+
+.nutrition-facts {
+  display: flex;
+  padding-inline: 5rem;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.line {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  main {
+    display: grid;
+    height: 100vh;
+    width: 700px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 600px;
+  }
+
+  img {
+    width: 520px;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    display: grid;
+    height: 100%;
+    width: 700px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 600px;
+  }
+
+  img {
+    width: 520px;
+  }
+}
