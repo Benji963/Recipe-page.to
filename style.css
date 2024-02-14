@@ -138,6 +138,12 @@ hr {
   padding-bottom: 1rem;
 }
 
+.nutrition-color {
+  color: var(--Nutmeg);
+  font-family: var(--ff-alt);
+  font-weight: var(--fw-mid);
+}
+
 .nutrition p {
   color: var(--Wenge-Brown);
   font-family: var(--ff-alt);
